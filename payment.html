@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  
+<div class="container">
+
+  <form action="" id="order-form">
+    <div class="row">
+      <div class="column">
+        <h3 class="title">Дані</h3>
+        <div class="input-box">
+          <span>Ім'я</span>
+          <input type="text" placeholder="Дудаш Богдан">
+        </div>
+
+        <div class="input-box">
+          <span>Пошта</span>
+          <input type="email" placeholder="dudash.bohdan@student.uzhnu.edu.ua">
+        </div>
+
+        <div class="input-box">
+          <span>Місто</span>
+          <input type="text" placeholder="Ужгород">
+        </div>
+
+
+        <div class="input-box">
+          <span>Адреса</span>
+          <input type="text" placeholder="вул. Минайська">
+        </div>
+
+<div class="flex">
+
+  <div class="input-box">
+    <span>Область</span>
+    <input type="text" placeholder="Закарпатська">
+  </div>
+
+  <div class="input-box">
+    <span>Код</span>
+    <input type="text" placeholder="88000">
+  </div>
+
+</div>
+
+      </div>
+    
+
+    
+    <div class="column">
+      <h3 class="title">Оплата замовлення</h3>
+      <div class="input-box">
+        <span>Картка приймається</span>
+       <img src="images/imgcards.png" alt="">
+      </div>
+
+      <div class="input-box">
+        <span>Ім'я Картки</span>
+        <input type="text" placeholder="">
+      </div>
+
+      <div class="input-box">
+        <span>Номер карти</span>
+        <input type="number" placeholder="0000 0000 0000 0000">
+      </div>
+
+
+      <div class="input-box">
+        <span>Місяць</span>
+        <input type="text" placeholder="00/00">
+      </div>
+
+<div class="flex">
+
+<div class="input-box">
+  <span>Рік</span>
+  <input type="text" placeholder="2025">
+</div>
+
+<div class="input-box">
+  <span>CVV</span>
+  <input type="number" placeholder="111">
+</div>
+
+</div>
+
+    </div>
+  </div>
+<button type="submit" class="btn">Підтвердити</button>
+
+  </form>
+
+</div>
+
+<div id="confirmation-popup" class="popup">
+  <div class="popup-content">
+      <p>Ваше замовлення прийнято!</p>
+      <button class="btn-close" onclick="closeConfirmationPopup()">Закрити</button>
+  </div>
+</div>
+
+<script>
+ // Функція для закриття спливаючого вікна підтвердження замовлення
+ function closeConfirmationPopup() {
+  document.getElementById('confirmation-popup').classList.remove('show');
+  location.reload(); // Перезавантажуємо сторінку після закриття
+}
+
+// Функція для показу спливаючого вікна підтвердження замовлення
+function showConfirmationPopup() {
+  document.getElementById('confirmation-popup').classList.add('show');
+}
+
+// Додаємо обробник події на форму для обробки кнопки "Підтвердити"
+document.getElementById('order-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Запобігаємо стандартній дії форми (перезавантаження сторінки)
+  showConfirmationPopup(); // Показуємо спливаюче вікно підтвердження замовлення
+});
+</script>
+
+</body>
+</html>

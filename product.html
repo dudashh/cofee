@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+<link rel="icon" type="images/x-icon" href="images/coffecupsilhouette_89235.ico">
+</head>
+<body>
+    <header class="header" id="header">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+    
+        <nav class="navbar">
+            <a href="index.html">головна</a>
+            
+           
+            <a href="#">продукція</a>
+            
+            <a href="blog.html">блог</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas faearch" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    
+        <div class="cart-items-container">
+            <h2>Кошик</h2>
+            <ul id="cart-items-list"></ul>
+            <div class="total-price">Загальна ціна: $<span id="total-price">0.00</span></div>
+            <a href="payment.html" class="btn">Перейти до оплати</a>
+        </div>
+    </header>
+
+    <section class="products">
+
+        <h1 class="heading"> Наша <span>продукція</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/product-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна Nicaragua</h3>
+                    <div class="stars">
+                        
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна Nicaragua', 15.99)">додати до кошика</a>
+            </div>
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/product-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна Columbia</h3>
+                    <div class="stars">
+                        
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна Columbia', 15.99)">додати до кошика</a>
+            </div>
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/product-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна peru</h3>
+                    <div class="stars">
+                        
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна peru', 15.99)">додати до кошика</a>
+            </div>
+    
+
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/Снимок экрана (369).png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна Nicaragua</h3>
+                    <div class="stars">
+                       
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна Nicaragua', 15.99)">додати до кошика</a>
+            </div>
+
+
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/Снимок экрана (370).png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна Nicaragua</h3>
+                    <div class="stars">
+                       
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна Nicaragua', 15.99)">додати до кошика</a>
+            </div>
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/Снимок экрана (371).png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна jamaica</h3>
+                    <div class="stars">
+                        
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна jamaica', 15.99)">додати до кошика</a>
+            </div>
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/Снимок экрана (372).png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна robusta</h3>
+                    <div class="stars">
+                       
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна robusta', 15.99)">додати до кошика</a>
+            </div>
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/Снимок экрана (373).png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна Columbia</h3>
+                    <div class="stars">
+                        
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна Columbia', 15.99)">додати до кошика</a>
+            </div>
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/Снимок экрана (374).png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна  zeland</h3>
+                    <div class="stars">
+                        
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна new zeland', 15.99)">додати до кошика</a>
+            </div>
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/Снимок экрана (375).png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна cuba</h3>
+                    <div class="stars">
+                        
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна cuba', 15.99)">додати до кошика</a>
+            </div>
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/Снимок экрана (376).png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна mexico</h3>
+                    <div class="stars">
+                        
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна mexico', 15.99)">додати до кошика</a>
+            </div>
+            <div class="box">
+              
+                <div class="image">
+                    <img src="images/Снимок экрана (377).png" alt="">
+                </div>
+                <div class="content">
+                    <h3>кавові зерна mexico</h3>
+                    <div class="stars">
+                        
+                    </div>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                </div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна mexico', 15.99)">додати до кошика</a>
+            </div>
+        </div>
+<div class="text">
+<p>Чашка ароматної кави - один з кращих варіантів початку дня.  Кожні 5 хвилин в світі випивають близько 2 млрд порцій цього підбадьорливого еліксиру, що перевершив за популярністю всі інші напої, включаючи чай.  Арабіка і робуста, по-турецьки і по-італійськи, мелений і в монодозах - кава має безліч сортів, ступенів обсмажування і заварювання, тому завжди різноманітний і здатний задовольнити будь-який смак.
+Цінителі яскравих смакових відчуттів воліють купувати кавові зерна і готувати напій самостійно, насолоджуючись міцним еспресо або м'яким латте в затишній домашній атмосфері.
+<p class="text2">
+    <h2>Замовити зернову каву з доставкою</h2>
+   <p> У нашому інтернет-магазині  можна купити якісну свіжообжарену зернову каву, вирощену в Індії, Уганді, Нікарагуа та інших країнах.  Наші ціни помірні, а доставка оперативна, щоб клієнти отримували тільки свіжі зерна кращої якості.  На нашому сайті можна замовити каву різних сортів авторського закарпатського обсмажування.  Наші співробітники відправлять замовлення в будь-який населений пункт України.
+
+    У нас власне виробництво, і ми добре розбираємося в кавових зернах, тому менеджери Medelin з радістю допоможуть вам вибрати сорт або бленд за вашим побажанням.  При необхідності ми зробимо індивідуальний помел під ваш спосіб приготування напою безпосередньо перед відправкою і безкоштовно.  Купуйте якісну і свіжу каву Medelin з доставкою по Україні і насолоджуйтеся ароматним тонізуючим напоєм, який відновить ваші сили і наповнить життєвою енергією.</p>
+</p>
+</p>
+</div>
+
+        
+    
+    </section>
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#header" class="fab fa-facebook-f"></a>
+            <a href="#header" class="fab fa-twitter"></a>
+            <a href="#header" class="fab fa-instagram"></a>
+            <a href="#header" class="fab fa-linkedin"></a>
+            <a href="#header" class="fab fa-pinterest"></a>
+        </div>
+    
+        <div class="links">
+            <a href="index.html">головна</a>
+            
+            <a href="#">продукція</a>
+           
+            
+            <a href="blog.html">блог</a>
+        </div>
+    
+       
+    
+    </section>
+
+    <div id="popup" class="popup">
+        <a href="#header" class="popup_area" onclick="closePopup()"></a>
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>Ваш товар додано до кошика!</p>
+        </div>
+    </div>
+
+    <script>
+        let cartItems = [];
+        let totalPrice = 0.0;
+        
+        function addToCart(itemName, itemPrice) {
+            const cartItem = {
+                name: itemName,
+                price: itemPrice
+            };
+            cartItems.push(cartItem);
+            updateCart();
+        }
+        
+        function removeFromCart(index) {
+            cartItems.splice(index, 1);
+            updateCart();
+        }
+        
+        function updateCart() {
+            const cartItemsList = document.getElementById('cart-items-list');
+            const totalPriceElement = document.getElementById('total-price');
+        
+            cartItemsList.innerHTML = '';
+            totalPrice = 0.0;
+        
+            cartItems.forEach((item, index) => {
+                totalPrice += item.price;
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    ${item.name} - $${item.price.toFixed(2)}
+                    <button onclick="removeFromCart(${index})">Видалити</button>
+                `;
+                cartItemsList.appendChild(listItem);
+            });
+        
+            totalPriceElement.textContent = totalPrice.toFixed(2);
+        }
+        
+        document.querySelector('#menu-btn').onclick = () =>{
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+        
+        document.querySelector('#search-btn').onclick = () =>{
+            document.querySelector('.search-form').classList.toggle('active');
+        }
+        
+        document.querySelector('#cart-btn').onclick = () =>{
+            document.querySelector('.cart-items-container').classList.toggle('active');
+        }
+        
+        window.onscroll = () =>{
+            document.querySelector('.navbar').classList.remove('active');
+            document.querySelector('.search-form').classList.remove('active');
+            document.querySelector('.cart-items-container').classList.remove('active');
+        }
+        </script>
+   
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" type="images/x-icon" href="images/coffecupsilhouette_89235.ico">
+</head>
+<body>
+    
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">головна</a>
+        <a href="#about">про нас</a>
+        <a href="#menu">новинки</a>
+        <a href="product.html">продукція</a>
+        <a href="#contact">зв'язок</a>
+        <a href="blog.html">блог</a>
+    </nav>
+
+    <div class="icons">
+        <div class="rch" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+   
+
+    <div class="cart-items-container">
+        <h2>Кошик</h2>
+        <ul id="cart-items-list"></ul>
+        <div class="total-price">Загальна ціна: $<span id="total-price">0.00</span></div>
+        <a href="payment.html" class="btn">Перейти до оплати</a>
+    </div>
+</header>
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>свіжа кава вранці</h3>
+        <p>Кожен день починається з моменту, коли аромат свіжозвареної кави наповнює ваш дім. Відчуйте теплий обіймок ранку з кожним ковтком.</p>
+        <a href="#menu" class="btn">замовити</a>
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>Про</span> нас </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/about-img.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Що робить нашу каву особливою?</h3>
+            <p class="ctt">Наша кава – це більше, ніж просто напій. Вона народжується з найкращих плантацій світу, де кожне зерно вирощується з любов'ю і ретельною турботою. Ми особисто відбираємо найкращі зерна, які потім обсмажуються з ювелірною точністю, щоб розкрити їх унікальний аромат і смак. Кожна чашка – це результат нашої пристрасті до якості та відданості традиціям.</p>
+            <p class="ctt">Завдяки цьому, ви відчуєте гармонію смаку з першим ковтком і на весь день зарядитесь енергією та теплом. Відкрийте для себе секрети нашої кави, і нехай кожен ваш ранок буде наповнений натхненням та радістю.</p>
+            <a href="blog.html" class="btn">читати більше</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> Наші <span>новинки</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/menu-1.png" alt="">
+            <h3>Раф</h3>
+            <div class="price">$5.99 <span>20.99</span></div>
+            <a href="#header" class="btn" onclick="addToCart('раф', 15.99)">додати до кошика</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-2.png" alt="">
+            <h3>глясе</h3>
+            <div class="price">$5.99 <span>20.99</span></div>
+            <a href="#header" class="btn" onclick="addToCart('глясе', 15.99)">додати до кошика</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-3.png" alt="">
+            <h3>допіо</h3>
+            <div class="price">$5.99 <span>20.99</span></div>
+            <a href="#header" class="btn" onclick="addToCart('допіо', 15.99)">додати до кошика</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-4.png" alt="">
+            <h3>мокко</h3>
+            <div class="price">$5.99 <span>20.99</span></div>
+            <a href="#header" class="btn" onclick="addToCart('мокко', 15.99)">додати до кошика</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-5.png" alt="">
+            <h3>кон панна</h3>
+            <div class="price">$5.99 <span>20.99</span></div>
+            <a href="#header" class="btn" onclick="addToCart('кон панна', 15.99)">додати до кошика</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-6.png" alt="">
+            <h3>марочино</h3>
+            <div class="price">$5.99 <span>20.99</span></div>
+            <a href="#header" class="btn" onclick="addToCart('марочино', 15.99)">додати до кошика</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products" id="products">
+
+    <h1 class="heading"> наша <span>продукція</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            
+          
+            <div class="image">
+                <img src="images/product-1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>кавові зерна Nicaragua</h3>
+                <div class="stars">
+                    
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна Nicaragua', 15.99)">додати до кошика</a>
+            </div>
+        </div>
+
+        <div class="box">
+          
+            <div class="image">
+                <img src="images/product-2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>кавові зерна Columbia</h3>
+                <div class="stars">
+                    
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна Columbia', 15.99)">додати до кошика</a>
+            </div>
+        </div>
+
+        <div class="box">
+           
+            <div class="image">
+                <img src="images/product-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>кавові зерна Peru</h3>
+                <div class="stars">
+                    
+                </div>
+                <div class="price">$15.99 <span>$20.99</span></div>
+                <a href="#header" class="btn" onclick="addToCart('кавові зерна Peru', 15.99)">додати до кошика</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>ЗВ'ЯЖІТЬСЯ з</span>  НАМИ </h1>
+
+    <div class="row">
+
+    
+        <iframe class="map" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=вулиця%20Заньковецької,%2089,%20Ужгород,%20Закарпатська&output=embedt=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" allowfullscreen="" loading="lazy"></iframe>
+      
+      
+      
+
+        <form action="">
+            <h3>БУДЕМО НА ЗВ'ЯЗКУ</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="ім'я">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope-open"></span>
+                <input type="text" placeholder="повідомлення">
+            </div>
+            <input type="submit" value="надіслати" class="btn" >
+        </form>
+
+    </div>
+
+</section>
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> Наш <span>блог</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-1.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">смачна та освіжаюча кава</a>
+                <span>by Бодя / 1 липня, 2024</span>
+                <p></p>
+                <a href="blog.html" class="btn">читати більше</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-2.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">естетика кави</a>
+                <span>by Бодя / 1 липня, 2024</span>
+                <p></p>
+                <a href="blog.html" class="btn">читати більше</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-3.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">латте-арт</a>
+                <span>by Бодя / 1 липня, 2024</span>
+                <p></p>
+                <a href="blog.html" class="btn">читати більше</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/?locale=uk_UA" class="fab fa-facebook-f"></a>
+        <a href="https://x.com/?lang=uk&mx=2" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+        <a href="https://ua.linkedin.com/" class="fab fa-linkedin"></a>
+        <a href="https://ru.pinterest.com/" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#home">головна </a>
+        <a href="#about">про нас</a>
+        <a href="#menu">новинки</a>
+        <a href="#products">продукція</a>
+       
+        <a href="#contact">зв'язок</a>
+        <a href="#blogs">блог</a>
+    </div>
+
+   
+
+</section>
+
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <p class="We">Ми використовуємо файли cookie</p>
+        <p class="wew">Ми використовуємо або можемо використовувати файли cookie з метою визначити постійних відвідувачів, тип контенту та веб-сайтів, на які посилається користувач Сайту, тривалість часу, проведеного кожним користувачем у будь-якій частині cайту, а також конкретні функціональні можливості<p>
+         <a href="index2.html"> <button class="btn1">Прочитати</button></a>
+        <button class="btn" onclick="closePopup()">Прийняти</button>
+    </div>
+</div>
+
+    
+<script>
+    let cartItems = [];
+    let totalPrice = 0.0;
+    
+    function addToCart(itemName, itemPrice) {
+        const cartItem = {
+            name: itemName,
+            price: itemPrice
+        };
+        cartItems.push(cartItem);
+        updateCart();
+    }
+    
+    function removeFromCart(index) {
+        cartItems.splice(index, 1);
+        updateCart();
+    }
+    
+    function updateCart() {
+        const cartItemsList = document.getElementById('cart-items-list');
+        const totalPriceElement = document.getElementById('total-price');
+    
+        cartItemsList.innerHTML = '';
+        totalPrice = 0.0;
+    
+        cartItems.forEach((item, index) => {
+            totalPrice += item.price;
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                ${item.name} - $${item.price.toFixed(2)}
+                <button onclick="removeFromCart(${index})">Видалити</button>
+            `;
+            cartItemsList.appendChild(listItem);
+        });
+    
+        totalPriceElement.textContent = totalPrice.toFixed(2);
+    }
+    
+    document.querySelector('#menu-btn').onclick = () =>{
+        document.querySelector('.navbar').classList.toggle('active');
+    }
+    
+    document.querySelector('#search-btn').onclick = () =>{
+        document.querySelector('.search-form').classList.toggle('active');
+    }
+    
+    document.querySelector('#cart-btn').onclick = () =>{
+        document.querySelector('.cart-items-container').classList.toggle('active');
+    }
+    
+    window.onscroll = () =>{
+        document.querySelector('.navbar').classList.remove('active');
+        document.querySelector('.search-form').classList.remove('active');
+        document.querySelector('.cart-items-container').classList.remove('active');
+    }
+
+   // Функція для закриття popup
+function closePopup() {
+    document.getElementById('popup').classList.remove('show');
+}
+
+// Функція для показу popup при завантаженні сторінки
+function showPopup() {
+    document.getElementById('popup').classList.add('show');
+}
+
+// Встановлюємо обробник події на завантаження сторінки
+window.onload = function() {
+    showPopup();
+}
+
+    </script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+</body>
+</html>
